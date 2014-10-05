@@ -1,0 +1,106 @@
+body {
+border:0;
+margin:0;
+padding:0;
+}
+.style1 {
+color: #FF3399;
+font-weight: bold;
+}
+
+.header {
+background-color:#342E31;
+height:100px;
+}
+.footer {
+background-color:#342E31;
+height:50px;
+padding-top:60px;
+text-align:center;
+color:#FFFFFF;
+}
+.form {
+text-align:right;
+}
+.icontent {
+float:right;
+width:500px;
+}
+.islide {
+text-align:left;
+}
+.style2 {
+color: #FF3399;
+font-style: italic;
+}
+.style3 {color: #FFFFFF}
+
+A.ssmItems:link		{color:black;text-decoration:none;}
+A.ssmItems:hover	{color:black;text-decoration:none;}
+A.ssmItems:active	{color:black;text-decoration:none;}
+A.ssmItems:visited	{color:black;text-decoration:none;}
+
+.magnifyarea{ /* CSS to add shadow to magnified image. Optional */
+box-shadow: 5px 5px 7px #818181;
+-webkit-box-shadow: 5px 5px 7px #818181;
+-moz-box-shadow: 5px 5px 7px #818181;
+filter: progid:DXImageTransform.Microsoft.dropShadow(color=#818181, offX=5, offY=5, positive=true);
+background: white;
+}
+
+.bubblewrap{
+list-style-type:none;
+
+}
+
+.bubblewrap li{
+display:inline-block;
+zoom:1; /*Trigger has layout in IE7 and less*/
+display:inline; /*For IE7 and less*/
+position:relative;
+width: 60px;
+height:60px;
+}
+
+.bubblewrap li img{
+position:absolute;
+width: 60px; /*default width of each image.*/
+height: 60px; /*default height of each image.*/
+left:0;
+top:0;
+border:0;
+}
+
+.bubblewrap .tooltip{ /*CSS for image tooltip (alt attribute of image)*/
+position:absolute;
+font:bold 12px Arial;
+padding:2px;
+width:100px;
+text-align:center;
+background:white;
+}
+/*CSS for 2 demos on the page*/
+#orbs li{
+width: 100px; /*width of image container. Should be wider than contained images (before bubbling) */
+height:100px;
+padding: 5px 5px 5px 5px;
+
+ /*height of image container. Should be taller than contained images (before bubbling) */
+}
+
+#orbs li img{
+width: 80px; /*width of each image before bubbling*/
+height: 80px;
+border:groove;
+ /*height of each image*/
+}
+
+#squares li{
+width: 45px; /*width of image container. Must be wider than contained images (before bubbling) */
+height:40px; /*height of image container. Must be taller than contained images (before bubbling) */
+}
+
+#squares li img{
+width: 31px; /*width of each image before bubbling*/
+height: 31px; /*height of each image*/
+}

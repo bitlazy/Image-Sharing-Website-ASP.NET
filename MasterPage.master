@@ -1,0 +1,49 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="header">
+    <img src="img/logo.gif" style="z-index: 100; left: 40px; position: absolute; top: 0px" />
+</div>
+<form runat="server" style="height:440px; width:100%">
+<table style="text-align: left; width: 100%;" border="0"
+ cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td style="text-align: left; vertical-align: middle; height: 19px;">
+    <asp:Label ID="Label1" runat="server" Style="z-index: 100; left: 32px;
+        position: absolute; top: 120px" Text="Label" Font-Bold="True" Font-Size="X-Large" Font-Strikeout="False" ForeColor="#FF3399" Height="32px" Width="250px"></asp:Label>
+</td>      <td style="text-align: right; vertical-align: middle; height: 19px;">
+
+    <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/index.aspx" Style="z-index: 101;
+        left: 424px; position: absolute; top: 128px">Home</asp:LinkButton>
+    <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/upload.aspx" Style="z-index: 102;
+        left: 480px; position: absolute; top: 128px">Upload</asp:LinkButton>
+    <asp:LinkButton ID="LinkButton3" runat="server" Style="z-index: 103; left: 544px;
+        position: absolute; top: 128px">My Profile</asp:LinkButton>
+    <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/logout.aspx" Style="z-index: 105;
+        left: 624px; position: absolute; top: 128px">Logout</asp:LinkButton>
+       </td>
+    </tr>
+  </tbody>
+</table>
+ <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+  
+  
+     
+    
+</asp:contentplaceholder>
+
+</form>
+<div class="footer">
+©Sandeep | <a href="#" class="style3">T.O.S</a>
+| <a href="#" class="style3">About Us</a> | <a href="#" class="style3">Contact Us</a> | <a href="#" class="style3">Privacy Policy</a></div>
+
+
+</body></html>
+
